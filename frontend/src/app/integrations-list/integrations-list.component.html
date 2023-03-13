@@ -1,0 +1,28 @@
+
+
+<div class="grid grid-cols-3 gap-4 justify-between m-4">
+        <div class="card bg-base-100 shadow-md" *ngFor="let integration of integrations" >
+            <div class="card-body">
+            <p *ngIf="!integration.connection" style="color:hsl(var(--er))"> Disconnected</p>
+            <h2 class="card-title"> <img src='{{ integration.logoUri }}' class="w-10"> {{ integration.name }}</h2>
+            
+            <div class="card-actions justify-end">
+                <button class="btn btn-sm btn-primary m-2" *ngIf="!integration.connection" (click)="connect(integration.key)">
+                    Connect
+                </button>
+                <div *ngIf="integration.connection">
+                    <button class="btn btn-sm btn-outline m-2" (click)="disconnect(integration.key)">Disconnect</button>
+                    <button class="btn btn-sm btn-outline m-2" (click)="configureContacts(integration.key)">Configure Contacts</button>
+                    <button class="btn btn-sm btn-outline m-2" (click)="configureCompanies(integration.key)">Configure Companies</button>
+                  </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        
+        
+
+        
+       
+</div>
