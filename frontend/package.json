@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^15.2.0-rc.0",
     "@angular/platform-browser-dynamic": "^15.2.0-rc.0",
     "@angular/router": "^15.2.0-rc.0",
-    "@integration-app/sdk": "^0.16.40",
+    "@integration-app/sdk": "^0.16.41",
     "angular-in-memory-web-api": "~0.15.0",
     "ng": "^0.0.0",
     "rxjs": "~7.8.0",
